@@ -1,0 +1,2 @@
+doctest :
+	doctest -XOverloadedStrings src

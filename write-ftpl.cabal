@@ -1,0 +1,27 @@
+cabal-version: 2.2
+name:          write-ftpl
+version:       0
+
+synopsis: Write yourself a typed functional language
+description:
+  Starting from Simply Typed Lambda Calculus we can get quite far
+
+library
+  default-language: Haskell2010
+
+  hs-source-dirs: src
+  ghc-options: -Wall
+
+  build-depends:
+    , base
+    , bound
+    , bound-extras
+    , transformers
+    , unification-fd
+
+  exposed-modules:
+    STLC
+    BiSTLC
+    Ty
+    LambdaPi
+    LLC
